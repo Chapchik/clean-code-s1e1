@@ -5,52 +5,12 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-  text-align: right;
-}
-
-.aaa img {
-  width: 100%;
-}
-
-.aaa .more_inf {
-  font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-
-  .aaa { 
-    text-align: center;
-  }
-
-}
-
-.centered-main-page-element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1
-}
-
-.task-row-wrapper {
-  display: flex;
-}
-
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
-li, 
-h3 {
+li {
   list-style: none;
 }
 
@@ -59,7 +19,46 @@ button{
   outline: none;
 }
 
-button {
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__link {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+
+  .header { 
+    text-align: center;
+  }
+
+}
+
+.main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.row__text {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
+}
+
+.section-row {
+  display: flex;
+}
+
+.row__button {
   background: none;
   border: 0px;
   color: #888888;
@@ -75,7 +74,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+.section__title {
   color: #333333;
   font-weight: 700;
   font-size: 15px;
@@ -141,18 +140,18 @@ li > input[type="text"] {
   width: 226px
 }
 
-button .delete img {
+.row__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button .delete img:hover {
+.row__button_delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul #completed-tasks label {
+ul#completed-tasks label {
   text-decoration: line-through;
   color: #888888;
 }
@@ -162,11 +161,11 @@ ul li input[type="text"] {
   display: none
 }
 
-ul li .editMode input[type="text"] {
+ul .row_edit input[type="text"] {
   display: inline-block;
   width: 224px
 }
 
-ul li .editMode label {
+ul .row_edit label {
   display: none;
 }
