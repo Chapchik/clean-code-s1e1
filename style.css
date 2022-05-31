@@ -54,7 +54,7 @@ button{
   flex-grow: 1
 }
 
-.section-row {
+.row {
   display: flex;
 }
 
