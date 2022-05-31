@@ -1,7 +1,7 @@
 /* Basic Style */
 body {
   background-color: #f8f8f8;
-  color: #333;
+  color: #333333;
   font-family: Lato, sans-serif;
 }
 .aaa {
@@ -54,7 +54,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 /* Heading */
 h3,
@@ -73,14 +73,14 @@ input[type="text"] {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #dddddd;
+  background: #ffffff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
 }
 input[type="text"]:focus {
-  color: #333;
+  color: #333333;
 }
 
 /* New Task */
@@ -96,7 +96,7 @@ input#new-task {
 li {
   overflow: hidden;
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,7 +129,7 @@ button.delete img:hover {
 /* Completed */
 ul#completed-tasks label {
   text-decoration: line-through
-  color: #888;
+  color: #888888;
 }
 
 /* Edit Task */
